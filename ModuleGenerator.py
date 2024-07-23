@@ -3,9 +3,10 @@ import os, os.path
 import errno
 
 class ModuleGenerator:
-    def __init__(self, author, date, name, company, path=""):
+    def __init__(self, author, date, year, name, company, path=""):
         self.author = author
         self.date = date
+        self.year = year
         self.moduleName = name
         self.company = company
         self.outputPath = path
@@ -36,12 +37,13 @@ class ModuleGenerator:
         headerFile = headerTemplate.substitute( module=self.moduleName,
                                                 author=self.author,
                                                 date=self.date,
+                                                year=self.year,
                                                 company=self.company,
                                                 fileMacro=self.moduleName.upper())
 
         # Write out to header file
         self.mkdir_p(self.outputPath)
-        with open(self.outputPath + self.moduleName.lower() + ".h", "w") as outputFile:
+        with open(self.outputPath + self.moduleName + ".h", "w") as outputFile:
             outputFile.write(headerFile)
         outputFile.close()
 
@@ -55,11 +57,12 @@ class ModuleGenerator:
         sourceFile = sourceTemplate.substitute(module=self.moduleName,
                                                author=self.author,
                                                date=self.date,
+                                               year=self.year,
                                                company=self.company,
                                                moduleInclude=self.moduleName.lower())
 
         # Write out to source file
         self.mkdir_p(self.outputPath)
-        with open(self.outputPath + self.moduleName.lower() + ".c", "w") as outputFile:
+        with open(self.outputPath + self.moduleName + ".c", "w") as outputFile:
             outputFile.write(sourceFile)
         outputFile.close()

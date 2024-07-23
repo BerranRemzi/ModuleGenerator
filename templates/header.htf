@@ -1,49 +1,36 @@
-/****************************************************************************
-* Title                 :   ${module}   
-* Author                :   ${author}
-* Origin Date           :   ${date}
-* Notes                 :   None
-*
-* THIS SOFTWARE IS PROVIDED BY ${company} "AS IS" AND ANY EXPRESSED
-* OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-* OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-* IN NO EVENT SHALL ${company} OR ITS CONTRIBUTORS BE LIABLE FOR ANY
-* DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-* (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-* SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-* HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
-* STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
-* IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
-* THE POSSIBILITY OF SUCH DAMAGE.
-*
-*****************************************************************************/
-/****************************************************************************
-* Doxygen C Template
-* Copyright (c) 2013 - Present -- Jacob Beningo - All Rights Reserved
-*
-* Feel free to use this Doxygen Code Template at your own risk for your own
-* purposes.  The latest license and updates for this Doxygen C template can be  
-* found at www.beningo.com or by contacting Jacob at jacob@beningo.com.
-*
-* For updates, free software, training and to stay up to date on the latest 
-* embedded software techniques sign-up for Jacobs newsletter at 
-* http://www.beningo.com/814-2/
-*
-* The above copyright notice and this permission notice shall be included in
-* all copies or substantial portions of the Template. 
-*
-*****************************************************************************/
+/*
+ * Title                 :   ${module}   
+ * Author                :   ${author}
+ * Origin Date           :   ${date}
+ * Notes                 :   None
+ *
+ * Copyright ${year} ${author}
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
+ *
+ */
+
 /** @file ${module}
  *  @brief This module TODO: WHAT DO I DO?
  * 
  *  This is the header file for the definition TODO: MORE ABOUT ME!
  */
-#ifndef ${fileMacro}_H_
-#define ${fileMacro}_H_
+#ifndef ${fileMacro}_H
+#define ${fileMacro}_H
 
 /******************************************************************************
-* Includes
-*******************************************************************************/
+ * Includes
+  ****************************************************************************/
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -56,12 +43,12 @@
 #define   CONSTANT					5
 
 /******************************************************************************
-* Module Preprocessor Macros
-*******************************************************************************/
+ * Module Preprocessor Macros
+ *****************************************************************************/
 
 /******************************************************************************
-* Module Typedefs
-*******************************************************************************/
+ * Module Typedefs
+ *****************************************************************************/
 /**
  * This enumeration is a list of test types
  */
@@ -72,12 +59,12 @@ typedef enum
 }Test_t;
 
 /******************************************************************************
-* Module Variable Definitions
-*******************************************************************************/
+ * Module Variable Definitions
+ ******************************************************************************/
 
 /******************************************************************************
-* Function Prototypes
-*******************************************************************************/
+ * Function Prototypes
+ ******************************************************************************/
 #ifdef __cplusplus
 extern "C"{
 #endif
@@ -85,9 +72,9 @@ extern "C"{
 void ${module}_Init(void);
 
 #ifdef __cplusplus
-} // extern "C"
+} /* extern "C" */
 #endif
 
-#endif /*${fileMacro}*/
+#endif /* ${fileMacro}_H */
 
-/*** End of File **************************************************************/
+/*** End of File *************************************************************/

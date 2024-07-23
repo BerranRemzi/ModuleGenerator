@@ -8,6 +8,10 @@ def getDate():
     today = date.today()
     return today.strftime("%m/%d/%Y")
 
+def getYear():
+    today = date.today()
+    return today.strftime("%Y")
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Create a new C module from templates')
 
@@ -33,5 +37,5 @@ if __name__ == '__main__':
     company = config.get("company")
 
     # Generate the output modules
-    Module = ModuleGenerator(author, getDate(), args.Name, company, outputPath)
+    Module = ModuleGenerator(author, getDate(), getYear(), args.Name, company, outputPath)
     Module.Make()
