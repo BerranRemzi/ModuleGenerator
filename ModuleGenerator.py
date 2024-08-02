@@ -59,7 +59,7 @@ class ModuleGenerator:
                                                date=self.date,
                                                year=self.year,
                                                company=self.company,
-                                               moduleInclude=self.moduleName.lower())
+                                               moduleInclude=self.moduleName)
 
         # Write out to source file
         self.mkdir_p(self.outputPath)
